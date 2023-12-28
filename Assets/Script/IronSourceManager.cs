@@ -61,6 +61,11 @@ public class IronSourceManager : MonoBehaviour
         }
     }
 
+    public void Start()
+    {
+        Setup();
+    }
+
 
     public void Setup()
     {
@@ -146,7 +151,7 @@ public class IronSourceManager : MonoBehaviour
 
     public void LoadInterstitialAd(float delay)
     {
-        Invoke(nameof(LoadInterstitialAd), delay);
+        Invoke("LoadInterstitialAds", delay);
     }
 
     public void ExampleShowIntrestitialWithCallback()
@@ -176,7 +181,7 @@ public class IronSourceManager : MonoBehaviour
         }
     }
 
-    public void LoadInterstitialAd()
+    public void LoadInterstitialAds()
     {
         if (!IronSource.Agent.isInterstitialReady() && !isLoadingISIntrestital)
         {
