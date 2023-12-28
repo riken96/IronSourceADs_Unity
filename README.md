@@ -15,7 +15,7 @@ This Unity project includes a script for managing IronSource ads, including bann
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/riken96/IronSourceADs_Unity.git
    ```
 
 2. Open the project in Unity.
